@@ -12,7 +12,7 @@ jobs:
       - run: tar -czvf nasapicoftheday.build.tar.gz *
       - uses: docker://antonyurchenko/git-release:latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_VICENTE }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_VICENTE }}
           CHANGELOG_FILE: "none"
         with:
           args: nasapicoftheday.build.tar.gz
